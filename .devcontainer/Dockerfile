@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:3.11
+FROM mcr.microsoft.com/devcontainers/python:1-3.12-bullseye
 RUN apt-get update \
     && apt-get install -y wget \
     bash \
@@ -9,6 +9,7 @@ RUN apt-get update \
     liblapack-dev \
     libamd2 \
     libcholmod3 \
+    libopencv-dev \
     libmetis-dev \
     libsuitesparse-dev \
     libnauty2-dev \
